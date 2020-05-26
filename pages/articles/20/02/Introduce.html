@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://sakaua.github.io/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://sakaua.github.io/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://sakaua.github.io/css/pygments/default.css" rel="stylesheet">
+    <link href="https://sakaua.github.io/css/blog/general.css" rel="stylesheet">
+
+    <style type="text/css">
+        h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+            content: "";
+            display: block;
+            height: 55px;
+            margin: -55px 0 0;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 30px;
+        }
+
+        .side-icon {
+            margin-right: 5px;
+        }
+
+        .side-hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-module {
+            max-width: 250px;
+        }
+
+        .sidebar-title {
+            font-weight: 700;
+        }
+
+        .bs-docs-sidebar.affix {
+            position: static;
+        }
+
+        .bs-docs-sidebar.affix {
+            position: static;
+        }
+
+        @media (min-width: 768px) {
+            .bs-docs-sidebar {
+                padding-left: 20px;
+            }
+        }
+
+        .bs-docs-sidenav {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .bs-docs-sidebar .nav > li > a {
+            display: block;
+            padding: 0px 20px;
+            color: #767676;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        .bs-docs-sidebar .nav > li > a:focus, .bs-docs-sidebar .nav > li > a:hover {
+            padding-left: 19px;
+            border-left: 1px solid #0088cc;
+            background-color: transparent;
+            color: #0088cc;
+            text-decoration: none;
+        }
+
+        .bs-docs-sidebar .nav > .active:focus > a, .bs-docs-sidebar .nav > .active:hover > a, .bs-docs-sidebar .nav > .active > a {
+            padding-left: 18px;
+            border-left: 2px solid #0088cc;
+            background-color: transparent;
+            color: #0088cc;
+            font-weight: 700;
+        }
+
+        .bs-docs-sidebar .nav .nav {
+            display: none;
+            padding-bottom: 5px;
+        }
+
+        .bs-docs-sidebar .nav .nav > li > a {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 9pt;
+        }
+
+        .bs-docs-sidebar .nav .nav > li > a:focus, .bs-docs-sidebar .nav .nav > li > a:hover {
+            padding-left: 29px;
+        }
+
+        .bs-docs-sidebar .nav .nav > .active:focus > a, .bs-docs-sidebar .nav .nav > .active:hover > a, .bs-docs-sidebar .nav .nav > .active > a {
+            padding-left: 28px;
+            font-weight: 500;
+        }
+
+        @media (min-width: 992px) {
+            .bs-docs-sidebar .nav > .active > ul {
+                display: block;
+            }
+
+            .bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
+                width: 213px;
+            }
+
+            .bs-docs-sidebar.affix {
+                position: fixed;
+                top: 20px;
+            }
+
+            .bs-docs-sidebar.affix-bottom {
+                position: absolute;
+            }
+
+            .bs-docs-sidebar.affix .bs-docs-sidenav, .bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+            .bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
+                width: 263px;
+            }
+        }
+
+        .icon-link {
+            color: inherit;
+            opacity: .75;
+            -webkit-transition: color .16s linear;
+            -o-transition: color .16s linear;
+            transition: color .16s linear;
+            margin-left: -1em;
+            padding-right: 1em;
+            position: absolute;
+        }
+
+        .icon-link:hover, .icon-link:focus {
+            text-decoration: none;
+            opacity: 1;
+        }
+
+    </style>
+
+
+    <link rel="stylesheet" href="https://sakaua.github.io/css/font-awesome.min.css">
+    <title>
+    介绍博客--配置文件(一)
+</title>
+</head>
+
+<body data-spy="scroll" data-target="#side-menu">
+<div>
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="navbar-brand" href="/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://sakaua.github.io/pages/articles.html"><i class="icon-list-alt" style="margin-right: 3px"></i>所有文章</a>
+                        </li>
+                        <li>
+                            <a href="https://sakaua.github.io/pages/articles/About.html"><i class=" icon-star" style="margin-right: 3px"></i>关于</a>
+                        </li>
+                    </ul>
+
+
+
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div style="min-height: 570px">
+        
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-8 blog-main">
+                <h1 id="_1">介绍一下最近的情况</h1>
+<p>没啥好介绍的 ，最近非常时期，注意防护！</p>
+<h1 id="_2">介绍一下这个博客吧</h1>
+<p>使用 Markdown 文档 去生成 静态页面， 然后将 静态页面 上传到类似github的网站，并使用网站的git pages 功能 ，实现博客
+可以让别人看到。成本较低，也能有自己的博客，类似Hexo这个功能。这个程序是由Python写的。使用Jinja2这个模板引擎。</p>
+<h2 id="_3">首先把之前没有遇见的问题在这里集合一下</h2>
+<p>之前做的太粗糙了，就是想在几天内写完，忽视了太多问题，现在慢慢捡起来吧。</p>
+<h3 id="_4">图片不适应网页</h3>
+<p>突然意识到没有做md文档的图片，图片会和它的原大小一样....
+我太难了。。前端写的太少，几乎根本不会写。导致这两个盒子重合。
+<img alt="" src="http://sakaua.github.io/images/introduce_1.png" />
+最后的解决方式是 在模板中添加这样一段代码，让图片自适应，</p>
+<p><code>css
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }</code> </p>
+<h3 id="_5">图片的地址不知道写什么</h3>
+<p>将图片放在<strong>static/images/</strong> 文件夹下面
+在md文档中可以写成 例如 一个叫做lw.png 的图片，在文档中就可以写成如下:
+``` markdown</p>
+<p><img alt="" src="http://sakaua.github.io/images/lw.png" /></p>
+<p>```</p>
+<h2 id="_6">在这里讲一下本博客的配置文件</h2>
+<p><strong>./info.ini</strong> </p>
+<p>这个方法也是我在做聊天机器人的时候看到一份代码是这样写的，觉得不错就放在这里面了。
+<img alt="" src="http://sakaua.github.io/images/config.png" /></p>
+<p>一个一个介绍吧</p>
+<h3 id="info_of_str">info_of_str</h3>
+<p>关于字符串的配置信息可以放在
+<strong>[info_of_str]</strong>
+下面，同样的关于数字的配置信息可以放在
+<strong>[info_of_int]</strong>
+下面。</p>
+<p>获取配置文件中的信息的程序是"<strong>getConfig.py</strong>"
+``` python
+from configparser import SafeConfigParser</p>
+<p>def get_config(config_file='info.ini'):
+    parser = SafeConfigParser()
+    parser.read(config_file)
+    # get the ints, floats and strings
+    #_conf_floats = [ (key, float(value)) for key,value in parser.items('floats') ]
+    _conf_ints = [ (key, int(value)) for key,value in parser.items('info_of_int') ]
+    _conf_strs = [ (key, str(value)) for key,value in parser.items('info_of_str') ]
+    return dict(_conf_ints + _conf_strs)</p>
+<p>```</p>
+<p>以上的代码可以返回一个字典类型的数据,类似json
+``` python
+{'num_page': 10,
+ 'name': 'PitiKid',
+ 'blog_name': '我的小博客',
+ 'quote': '退却只会衰老,胆小必招死亡',
+ 'domain': 'https://pitikid.gitee.io/',
+ 'project_root': '/home/pitikid/thc/t_git/my_blog/',
+ 'template_root': 'templates/',
+ 'static_root': 'static/',
+ 'articles_root': 'articles/'}</p>
+<p>```</p>
+<h1 id="_7">以上就是关于本博客的配置的介绍</h1>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module" data-spy="affix">
+                    <div>
+                        <h5 class="sidebar-title">
+                            <button class="btn btn-default"  data-toggle="collapse" href="#meta_box">
+                                开/合 文章属性
+                            </button>
+                        </h5>
+                    </div>
+                    <div class="collapse in" id="meta_box">
+                        <div class='sidebar-module-inset'><h5 class='sidebar-title'><i class='icon-circle-blank side-icon'></i>标题</h5><p>介绍博客--配置文件(一)</p></div>
+                        <div class="sidebar-module-inset">
+                            <h5 class="sidebar-title"><i class="icon-lightbulb side-icon"></i>摘要</h5>
+
+                            <p>介绍本博客的思路--介绍博客的配置文件</p>
+                        </div>
+                        <hr class="side-hr">
+                        <div>
+                            <h5 class="sidebar-title"><i class="icon-user side-icon"></i>作者</h5>
+                            <div>Lw</div>
+                        </div>
+                        <hr class="side-hr">
+                        <div>
+                            <h5 class="sidebar-title"><i class="icon-tags side-icon"></i>标签</h5>
+                            <div>介绍,Python,博客</div>
+                        </div>
+                        <hr class="side-hr">
+                    </div>
+                    <div class="sidebar-module">
+                        <h5 class="sidebar-title"><i class="icon-th-list side-icon"></i>目录</h5>
+                        <nav id="side-menu" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                            <div class="toc">
+<ul>
+<li><a href="#_1">介绍一下最近的情况</a></li>
+<li><a href="#_2">介绍一下这个博客吧</a><ul>
+<li><a href="#_3">首先把之前没有遇见的问题在这里集合一下</a><ul>
+<li><a href="#_4">图片不适应网页</a></li>
+<li><a href="#_5">图片的地址不知道写什么</a></li>
+</ul>
+</li>
+<li><a href="#_6">在这里讲一下本博客的配置文件</a><ul>
+<li><a href="#info_of_str">info_of_str</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_7">以上就是关于本博客的配置的介绍</a></li>
+</ul>
+</div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <footer class="blog-footer">
+        <p><a href="#">Back to top</a></p>
+        <p><i>used
+            <a href="http://v3.bootcss.com/">Bootstrap3</a>
+            & <a href="http://www.bootcss.com/p/font-awesome/">Font Awesome</a>
+        </i></p>
+        <p>
+            <a href="https://sakaua.github.io/">By Lw<img style="vertical-align: bottom; height: 12px; margin-left: 5px" src="https://sakaua.github.io/images/favicon.ico"></a>
+        </p>
+
+    </footer>
+</div>
+
+    <script src="https://sakaua.github.io/js/third/jquery.min.js"></script>
+    <script src="https://sakaua.github.io/js/third/bootstrap.min.js"></script>
+
+    <script type="application/javascript">
+        $(".toc ul").addClass("nav");
+        $(".toc ul:first").addClass("bs-docs-sidenav");
+        $("table").addClass("table table-striped table-bordered table-hover")
+    </script>
+
+</body>
+</html>
